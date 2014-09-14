@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="settings_2d"
+			android:title="@string/settings_pref_category_2d_title">		
+			<CheckBoxPreference android:key="settings_qrcode"
+				android:title="@string/settings_qrcode_title"
+				android:defaultValue="true" />
+			<CheckBoxPreference android:key="settings_dmcode"
+				android:title="@string/settings_dmcode_title"
+				android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:key="settings_1d"
+			android:title="@string/settings_pref_category_1d_title">
+			<CheckBoxPreference android:key="settings_ean"
+				android:title="@string/settings_ean_title"
+				android:defaultValue="true" />
+			<CheckBoxPreference android:key="settings_code39"
+				android:title="@string/settings_code39_title"
+				android:defaultValue="true" />
+			<CheckBoxPreference android:key="settings_code128"
+				android:title="@string/settings_code128_title"
+				android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

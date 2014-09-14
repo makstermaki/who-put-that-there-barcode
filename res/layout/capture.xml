@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <SurfaceView android:id="@+id/preview_view"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_centerInParent="true"/>
+  <tw.com.quickmark.sdk.demo.ViewfinderView
+      android:id="@+id/viewfinder_view"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="@color/transparent" />
+  <LinearLayout android:id="@+id/format_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="4dip">
+          <TextView android:id="@+id/barcodeformat_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:paddingRight="4dip"/>
+   </LinearLayout>  
+   <TextView android:id="@+id/status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/transparent"
+            android:text="@string/msg_default_status"
+            android:textSize="14sp"/>               
+</FrameLayout>
+
